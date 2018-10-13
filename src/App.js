@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import './static/css/App.css';
-
-import Page from './components/Page';
+import React, {Component} from 'react';
+import {Provider} from 'react-redux'
+import Layout from './components/Layout';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { 
@@ -9,7 +8,9 @@ import {
   faSitemap,
   faTasks,
   faCog,
-  faTachometerAlt 
+  faTachometerAlt,
+  faUser,
+  faUserAlt
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faWrench);
@@ -17,16 +18,18 @@ library.add(faSitemap);
 library.add(faTasks);
 library.add(faCog);
 library.add(faTachometerAlt);
+library.add(faUser);
+library.add(faUserAlt);
 
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Page/>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <Provider>
+                <Layout/>
+            </Provider>
+        );
+    }
 }
 
 export default App;
