@@ -21,7 +21,7 @@ class LoginPage extends Component {
 				    <hr />	
                     <Row>
                         <Col md="12">
-                            <LoginForm />
+                            <LoginForm login={this.props.login} />
                             <br/>
                         </Col>
                     </Row>
