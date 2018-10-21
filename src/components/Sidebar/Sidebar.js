@@ -7,13 +7,21 @@ class Sidebar extends Component {
         return (
             <nav className="navbar-default navbar-side" role="navigation">
                 <div className="sidebar-collapse">
-                    <ul className="nav" id="main-menu">                        
-                        <li className="text-center">
-                            <a href="#profile" style={{"fontSize": "12pt", "color": "white"}}>
-                                Welcome, User! <br/>
-                                <img src={user} alt="User" className="user-image img-responsive"/>
+                    <div class="text-center" style={{width: '100%'}}>
+                        <div style={{fontSize:'12pt', color:'white'}}>
+                            Welcome, User! <br/>
+                            <img src={user} alt="User" className="user-image img-responsive"/>
+                        </div>
+                        <div style={{width: '100%', borderBottom: '1px solid rgba(107, 108, 109, 0.19)'}}>
+                            <a href="#profile" style={{fontSize:'12pt', color:'white', paddingRight: '10px'}}>
+                                <FontAwesomeIcon icon="user"/>
                             </a>
-                        </li>          
+                            <a href="#/logout" style={{fontSize:'12pt', color:'white', paddingLeft: '10px'}} title="logout">
+                                <FontAwesomeIcon icon="lock"/>
+                            </a>
+                        </div>
+				    </div>
+                    <ul className="nav" id="main-menu">              
                         <li id="dashboard-menu-item">
                             <a href="/"><FontAwesomeIcon icon="tachometer-alt"/> Dashboard</a>
                         </li>                          

@@ -12,10 +12,7 @@ class Navbar extends Component {
                         <span className="icon-bar"></span>
                     </button>
                     <a className="navbar-brand" href="/">JMS</a>                         
-                </div>          
-                <div style={{"color": "white", "padding": "15px 50px 5px 50px", "float": "right", "fontSize": "16px"}}> 
-                    <a href="/#/logout" className="btn btn-danger square-btn-adjust">Logout</a> 
-                </div>
+                </div>    
             </nav>
         );
       }

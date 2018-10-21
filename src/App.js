@@ -12,7 +12,7 @@ import {
   faCog,
   faTachometerAlt,
   faUser,
-  faUserAlt
+  faLock
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faWrench);
@@ -21,7 +21,7 @@ library.add(faTasks);
 library.add(faCog);
 library.add(faTachometerAlt);
 library.add(faUser);
-library.add(faUserAlt);
+library.add(faLock);
 
 class App extends Component {
     render() {
